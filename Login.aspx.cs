@@ -19,6 +19,7 @@ namespace New_Project
         {
             string str = "select Count(Reg_Id) from Login_Tab where Username ='" + TextBox1.Text + "' and Password = '" + TextBox2.Text + "' ";
             string cid = ob.fn_scalar(str);
+
             if (cid == "1")
             {
                 string str1 = "select Reg_Id from Login_Tab where Username ='" + TextBox1.Text + "' and Password = '" + TextBox2.Text + "' ";
@@ -26,12 +27,14 @@ namespace New_Project
                 Session["id"] = regid;
                 string str2 = "select User_type from Login_Tab where Username ='" + TextBox1.Text + "' and Password = '" + TextBox2.Text + "' ";
                 string logtype = ob.fn_scalar(str2);
+
                 if (logtype == "admin")
                 {
                     Response.Redirect("Admin_Index.aspx");
                     Label3.Visible = true;
                     Label3.Text = "admin";
                 }
+
                 else if (logtype == "user")
                 {
                     Response.Redirect("User_Index.aspx");
@@ -42,3 +45,4 @@ namespace New_Project
         }
     }
 }
+

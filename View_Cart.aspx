@@ -4,12 +4,22 @@
         .auto-style1 {
             height: 27px;
         }
+        .auto-style2 {
+            height: 28px;
+        }
+        .auto-style3 {
+            width: 561px;
+        }
+        .auto-style4 {
+            height: 27px;
+            width: 561px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="w-100">
         <tr>
-            <td>
+            <td class="auto-style3">
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
                     <Columns>
                         <asp:ImageField DataImageUrlField="P_Photo" HeaderText="Product Image">
@@ -19,7 +29,6 @@
                         <asp:BoundField DataField="P_Details" HeaderText="Details" />
                         <asp:BoundField DataField="Cart_Quantity" HeaderText="Quantity" />
                         <asp:BoundField DataField="Cart_Total" HeaderText="Total" />
-                        <asp:BoundField />
                         <asp:TemplateField HeaderText="Edit">
                             <ItemTemplate>
                                 <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Cart_Id") %>' OnCommand="LinkButton1_Command">Edit</asp:LinkButton>
@@ -36,9 +45,43 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">
-                <asp:Panel ID="Panel1" runat="server" Height="116px" Visible="False" Width="1242px">
+            <td class="auto-style3">
+                &nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                &nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Conform Order" />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                &nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style3">
+                &nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style4">
+                <asp:Panel ID="Panel1" runat="server" Height="149px" Visible="False" Width="1242px">
                     <table class="w-100">
+                        <tr>
+                            <td class="auto-style1">
+                                &nbsp;</td>
+                            <td class="auto-style1">
+                                &nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
                         <tr>
                             <td class="auto-style1">
                                 <asp:Label ID="Label1" runat="server" Text="Quantity"></asp:Label>
@@ -54,8 +97,8 @@
                             <td class="auto-style2">
                                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Edit" />
                             </td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style2"></td>
+                            <td class="auto-style2"></td>
                         </tr>
                         <tr>
                             <td>&nbsp;</td>
@@ -66,16 +109,16 @@
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style1"></td>
                         </tr>
                         <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style1"></td>
+                            <td class="auto-style1"></td>
                         </tr>
                     </table>
                 </asp:Panel>
@@ -83,16 +126,16 @@
             <td class="auto-style1"></td>
         </tr>
         <tr>
-            <td>
-                &nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style1"></td>
+            <td class="auto-style4">
+                </td>
             <td class="auto-style1"></td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td class="auto-style4"></td>
+            <td class="auto-style1"></td>
+        </tr>
+        <tr>
+            <td class="auto-style3">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
     </table>

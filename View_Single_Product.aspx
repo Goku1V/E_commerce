@@ -24,7 +24,7 @@
                 <br />
                 <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
                 <br />
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Height="43px"></asp:TextBox>
                 <br />
                 <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
             </td>

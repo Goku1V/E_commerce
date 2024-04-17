@@ -44,6 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,10 +69,71 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Account_Details.aspx" />
     <Content Include="Add_Category.aspx" />
     <Content Include="Add_Product.aspx" />
     <Content Include="Admin_Index.aspx" />
     <Content Include="Admin_Reg.aspx" />
+    <Content Include="Connected Services\Balance_Check\New_Project.Balance_Check.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Balance_Check\Service.disco" />
+    <None Include="Connected Services\Balance_Check\configuration91.svcinfo" />
+    <None Include="Connected Services\Balance_Check\configuration.svcinfo" />
+    <None Include="Connected Services\Balance_Check\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\Bal_Check\New_Project.Bal_Check.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Bal_Check\Service.disco" />
+    <None Include="Connected Services\Bal_Check\configuration91.svcinfo" />
+    <None Include="Connected Services\Bal_Check\configuration.svcinfo" />
+    <None Include="Connected Services\Bal_Check\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\Check_Balance\New_Project.Check_Balance.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Balance_Check\Service.wsdl" />
+    <None Include="Connected Services\Balance_Check\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Balance_Check\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Balance_Check\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Bal_Check\Service.wsdl" />
+    <None Include="Connected Services\Bal_Check\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Bal_Check\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Bal_Check\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Check_Balance\Service.disco" />
+    <None Include="Connected Services\Check_Balance\configuration91.svcinfo" />
+    <None Include="Connected Services\Check_Balance\configuration.svcinfo" />
+    <None Include="Connected Services\Check_Balance\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\Check_Bal\New_Project.Check_Bal.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Check_Bal\Service.disco" />
+    <None Include="Connected Services\Check_Bal\configuration91.svcinfo" />
+    <None Include="Connected Services\Check_Bal\configuration.svcinfo" />
+    <None Include="Connected Services\Check_Bal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />
@@ -133,6 +196,7 @@
     <Content Include="Login.aspx" />
     <Content Include="User_Index.aspx" />
     <Content Include="User_Reg.aspx" />
+    <Content Include="View_bill.aspx" />
     <Content Include="View_Cart.aspx" />
     <Content Include="View_Products.aspx" />
     <Content Include="View_Single_Product.aspx" />
@@ -140,6 +204,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_Details.aspx.cs">
+      <DependentUpon>Account_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account_Details.aspx.designer.cs">
+      <DependentUpon>Account_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Add_Category.aspx.cs">
       <DependentUpon>Add_Category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -169,6 +240,26 @@
       <DependentUpon>Admin_Reg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Concls.cs" />
+    <Compile Include="Connected Services\Balance_Check\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Bal_Check\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Check_Balance\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Check_Bal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Edit Category.aspx.cs">
       <DependentUpon>Edit Category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +302,13 @@
     </Compile>
     <Compile Include="User_Reg.aspx.designer.cs">
       <DependentUpon>User_Reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_bill.aspx.cs">
+      <DependentUpon>View_bill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_bill.aspx.designer.cs">
+      <DependentUpon>View_bill.aspx</DependentUpon>
     </Compile>
     <Compile Include="View_Cart.aspx.cs">
       <DependentUpon>View_Cart.aspx</DependentUpon>
@@ -256,6 +354,26 @@
     <Content Include="js\bootstrap.js.map" />
     <Content Include="js\bootstrap.min.js.map" />
     <Content Include="Master_Page.Master" />
+    <None Include="Connected Services\Check_Balance\Service.wsdl" />
+    <None Include="Connected Services\Check_Balance\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Check_Balance\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Check_Balance\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Check_Bal\Service.wsdl" />
+    <None Include="Connected Services\Check_Bal\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Check_Bal\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Check_Bal\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -266,6 +384,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Photos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\Balance_Check\" />
+    <WCFMetadataStorage Include="Connected Services\Bal_Check\" />
+    <WCFMetadataStorage Include="Connected Services\Check_Balance\" />
+    <WCFMetadataStorage Include="Connected Services\Check_Bal\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

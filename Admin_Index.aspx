@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Add_Category.aspx">Add Category</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Add_Category.aspx" Font-Bold="False" Font-Italic="False">Add Category</asp:LinkButton>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
