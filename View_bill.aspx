@@ -4,6 +4,13 @@
         .auto-style1 {
             width: 238px;
         }
+        .auto-style2 {
+            width: 238px;
+            height: 27px;
+        }
+        .auto-style3 {
+            height: 27px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -51,16 +58,16 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style1">
+            <td class="auto-style2">
                 <asp:Label ID="Label5" runat="server" Text="Grand Total"></asp:Label>
                 <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
             </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style3"></td>
+            <td class="auto-style3"></td>
         </tr>
         <tr>
             <td class="auto-style1">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Pay" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Pay" style="height: 26px" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

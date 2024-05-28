@@ -16,12 +16,12 @@ namespace New_Project
         {
             if (!IsPostBack)
             {
-
                 string sel = "select * from Product_table where Cat_id = " + Session["catid"] + "";
                 DataSet ds = ob.fn_dataset(sel);
                 DataList1.DataSource = ds;
                 DataList1.DataBind();
             }
+
         }
 
         protected void ImageButton1_Command(object sender, CommandEventArgs e)

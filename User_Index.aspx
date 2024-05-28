@@ -9,7 +9,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="w-100">
         <tr>
-            <td>&nbsp;</td>
+            <td>
+                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Account_Details.aspx">Add Account Details</asp:LinkButton>
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -17,7 +19,16 @@
         </tr>
         <tr>
             <td>
-                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Account_Details.aspx">Add Account Details</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/View_Cart.aspx">View_Cart</asp:LinkButton>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Feedback.aspx">FeedBack</asp:LinkButton>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -82,8 +93,7 @@
         </tr>
         <tr>
             <td class="auto-style1">
-                <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/View_Cart.aspx">View_Cart</asp:LinkButton>
-            </td>
+                &nbsp;</td>
             <td class="auto-style1"></td>
             <td class="auto-style1"></td>
             <td class="auto-style1"></td>

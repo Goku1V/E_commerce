@@ -20,6 +20,7 @@ namespace New_Project
         int pid;
         int uid;
         int gt=0;
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -115,23 +116,15 @@ namespace New_Project
                 int k = ob.fn_nonquert(bin);
 
 
-            //if (k != 0)
-            //{
-            //    string del = "truncate table Cart_Tab";
-            //    int l = ob.fn_nonquert(del);
-            //}
+            if (k != 0)
+            {
+                string del = "delete from Cart_Tab where Us_Id="+Session["id"]+"";
+                int l = ob.fn_nonquert(del);
+            }
 
 
 
             Response.Redirect("View_bill.aspx");
-
-
-            
-               
-
-
-
-            
 
         }
     }
